@@ -1,0 +1,12 @@
+<ion-view view-title="Barcode scanner">
+  <ion-content class="padding">
+    <button ng-click="$controller.scan()" class="button button-block button-positive">
+        Scan barcode
+    </button>
+    <div class="card">
+        <div class="item item-text-wrap">
+            {{ $controller.getBarcodeText() }}
+        </div>
+    </div>
+  </ion-content>
+</ion-view>

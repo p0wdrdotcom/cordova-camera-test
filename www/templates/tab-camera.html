@@ -1,0 +1,18 @@
+<ion-view view-title="Camera Preview">
+  <ion-content class="padding">
+    <button ng-click="$controller.showCamera()" class="button button-block button-positive">
+        Show
+    </button>
+    <button ng-click="$controller.hideCamera()" class="button button-block button-positive">
+        Hide
+    </button>
+    <button ng-click="$controller.takePicture()" class="button button-block button-positive">
+        Take picture
+    </button>
+    <div ng-repeat="file in $controller.getFilenames()" class="card">
+      <div class="item item-text-wrap">
+        {{ file }}
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
